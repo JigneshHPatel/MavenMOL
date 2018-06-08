@@ -4,133 +4,17 @@
   <test thread-count="1" name="cljTestChrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="cljCheck.AllLoginsAndMyProfile">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="setup"/>
-          <include name="beforeSuite"/>
-          <include name="after"/>
-          <include name="b_FacebookLogin"/>
-          <include name="a_DirectLogin"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- cljCheck.AllLoginsAndMyProfile -->
-      <class name="cljCheck.SearchPage">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="setup"/>
-          <include name="Search"/>
-          <include name="beforeSuite"/>
-          <include name="after"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- cljCheck.SearchPage -->
-      <class name="cljCheck.TopicPage">
-        <methods>
-          <include name="a_TopicPageHeading"/>
-          <include name="beforeMethod"/>
-          <include name="b_TopicModules"/>
-          <include name="setup"/>
-          <include name="g_DontMiss"/>
-          <include name="after"/>
-          <include name="f_topic_names"/>
-          <include name="h_WeathreTest"/>
-          <include name="beforeSuite"/>
-          <include name="e_Test6"/>
-          <include name="c_TopicIndex"/>
-          <include name="tearDown"/>
-          <include name="d_Test5"/>
-        </methods>
-      </class> <!-- cljCheck.TopicPage -->
-      <class name="cljCheck.PreNextCtr">
-        <methods>
-          <include name="PreNextControls"/>
-          <include name="beforeMethod"/>
-          <include name="setup"/>
-          <include name="beforeSuite"/>
-          <include name="after"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- cljCheck.PreNextCtr -->
-      <class name="cljCheck.Sports">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="a10_SubChannels"/>
-          <include name="setup"/>
-          <include name="a01_Ad"/>
-          <include name="a07_TopMenu"/>
-          <include name="after"/>
-          <include name="a06_Footer"/>
-          <include name="a03_MoreStartofSportsPuff"/>
-          <include name="a02_StartsOfSportPuff"/>
-          <include name="a04_SportsNewsletter"/>
-          <include name="a08_weather"/>
-          <include name="beforeSuite"/>
-          <include name="a11_TeamPages"/>
-          <include name="tearDown"/>
-          <include name="a12_MatchZones"/>
-        </methods>
-      </class> <!-- cljCheck.Sports -->
-      <class name="cljCheck.RelatedArticle">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="RelatedArticles"/>
-          <include name="setup"/>
-          <include name="beforeSuite"/>
-          <include name="after"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- cljCheck.RelatedArticle -->
-      <class name="cljCheck.SocialShare">
-        <methods>
-          <include name="i_SocialShareOn_Comments"/>
-          <include name="beforeMethod"/>
-          <include name="setup"/>
-          <include name="h_FB_Icon_on_RelatedAtrticle"/>
-          <include name="d_SocialShare_underSearch_Article"/>
-          <include name="f_SocialShare_Bottom_Article"/>
-          <include name="after"/>
-          <include name="a_FacebookLike_TopLeft_HomePage"/>
-          <include name="c_SocialShare_UnderSearch_HomePage"/>
-          <include name="beforeSuite"/>
-          <include name="e_SocialShare_Top_Article"/>
-          <include name="g_FB_Icon_FlyOut_onArticle"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- cljCheck.SocialShare -->
       <class name="cljCheck.MostShared">
         <methods>
-          <include name="MostShared_US_HomePage"/>
           <include name="beforeMethod"/>
-          <include name="setup"/>
-          <include name="beforeSuite"/>
+          <include name="MostShared_US_HomePage"/>
           <include name="after"/>
-          <include name="MostShared_UK_HomePage"/>
+          <include name="Before"/>
           <include name="tearDown"/>
+          <include name="beforeSuite"/>
+          <include name="MostShared_UK_HomePage"/>
         </methods>
       </class> <!-- cljCheck.MostShared -->
-      <class name="cljCheck.AllMenuSubMenuNav">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="a_Home"/>
-          <include name="setup"/>
-          <include name="f_Australia"/>
-          <include name="c_US"/>
-          <include name="after"/>
-          <include name="h_Health"/>
-          <include name="l_Travel"/>
-          <include name="g_Femail"/>
-          <include name="e_TVShowbiz"/>
-          <include name="m_FashionFinder"/>
-          <include name="d_Sports"/>
-          <include name="j_Money"/>
-          <include name="b_News"/>
-          <include name="i_Science"/>
-          <include name="beforeSuite"/>
-          <include name="tearDown"/>
-          <include name="k_Video"/>
-        </methods>
-      </class> <!-- cljCheck.AllMenuSubMenuNav -->
     </classes>
   </test> <!-- cljTestChrome(failed) -->
 </suite> <!-- Failed suite [cljSuite] -->

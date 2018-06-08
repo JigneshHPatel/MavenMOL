@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="cljSuite">
+
+	<!-- ࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇ -->
+
+	<test name="cljTestChrome65">
+
+		<parameter name="os" value="Windows" />
+		<parameter name="os_version" value="10" />
+		<parameter name="browser" value="Chrome" />
+		<parameter name="browser_version" value="65.0" />
+
+		<packages>
+			<package name="src/test/java" />
+		</packages>
+
+		<classes>
+
+			<class name="cljCheck.SEO_Module" />
+			<class name="cljCheck.AllLoginsAndMyProfile" />
+			<class name="cljCheck.MostShared" />
+			<class name="cljCheck.PreNextCtr" />
+			<class name="cljCheck.RelatedArticle" />
+			<class name="cljCheck.SearchPage" />
+			<class name="cljCheck.TopicPage" />
+			<class name="cljCheck.ReaderComment" />
+			<class name="cljCheck.SocialShare" />
+			<class name="cljCheck.Sports" />
+
+		</classes>
+
+	</test>
+
+	<!-- ࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇ -->
+
+	<test name="cljTestFirefox">
+
+		<parameter name="os" value="Windows" />
+		<parameter name="os_version" value="10" />
+		<parameter name="browser" value="Firefox" />
+		<parameter name="browser_version" value="59.0" />
+
+		<packages>
+			<package name="src/test/java" />
+		</packages>
+
+		<classes>
+			<class name="cljCheck.SEO_Module" />
+			<class name="cljCheck.AllLoginsAndMyProfile" />
+			<class name="cljCheck.MostShared" />
+			<class name="cljCheck.PreNextCtr" />
+			<class name="cljCheck.RelatedArticle" />
+			<class name="cljCheck.SearchPage" />
+			<class name="cljCheck.TopicPage" />
+			<class name="cljCheck.ReaderComment" />
+			<class name="cljCheck.SocialShare" />
+			<class name="cljCheck.Sports">
+				<methods>
+					<exclude name="d_SportsNewsletter" />
+					<exclude name="a_Ad" />
+				</methods>
+			</class>
+
+
+
+		</classes>
+
+	</test>
+
+	<!-- ࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇ -->
+
+	<test name="cljTestChrome64">
+
+		<parameter name="os" value="Windows" />
+		<parameter name="os_version" value="10" />
+		<parameter name="browser" value="Chrome" />
+		<parameter name="browser_version" value="64.0" />
+
+		<packages>
+			<package name="src/test/java" />
+		</packages>
+
+		<classes>
+
+			<class name="cljCheck.SEO_Module" />
+			<class name="cljCheck.MostShared" />
+			<class name="cljCheck.PreNextCtr" />
+			<class name="cljCheck.ReaderComment" />
+			<class name="cljCheck.SocialShare" />
+
+
+
+		</classes>
+
+	</test>
+
+
+</suite>
