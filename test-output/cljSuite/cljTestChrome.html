@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>TestNG:  cljTestChrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>cljTestChrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Mar 16 23:29:41 GMT 2018</td>
+</tr>
+<tr><td>Total time:</td><td>789 seconds (789773 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cljCheck.MostShared.MostShared_UK_HomePage()'><b>MostShared_UK_HomePage</b><br>Test class: cljCheck.MostShared</td>
+<td></td>
+<td>41</td>
+<td>cljCheck.MostShared@30b8a058</td></tr>
+<tr>
+<td title='cljCheck.MostShared.MostShared_US_HomePage()'><b>MostShared_US_HomePage</b><br>Test class: cljCheck.MostShared</td>
+<td></td>
+<td>39</td>
+<td>cljCheck.MostShared@30b8a058</td></tr>
+<tr>
+<td title='cljCheck.PreNextCtr.PreNextControls()'><b>PreNextControls</b><br>Test class: cljCheck.PreNextCtr</td>
+<td></td>
+<td>21</td>
+<td>cljCheck.PreNextCtr@4bbfb90a</td></tr>
+<tr>
+<td title='cljCheck.RelatedArticle.RelatedArticles()'><b>RelatedArticles</b><br>Test class: cljCheck.RelatedArticle</td>
+<td></td>
+<td>39</td>
+<td>cljCheck.RelatedArticle@7c29daf3</td></tr>
+<tr>
+<td title='cljCheck.SearchPage.Search()'><b>Search</b><br>Test class: cljCheck.SearchPage</td>
+<td></td>
+<td>31</td>
+<td>cljCheck.SearchPage@7494e528</td></tr>
+<tr>
+<td title='cljCheck.AllLoginsAndMyProfile.a_DirectLogin()'><b>a_DirectLogin</b><br>Test class: cljCheck.AllLoginsAndMyProfile</td>
+<td></td>
+<td>56</td>
+<td>cljCheck.AllLoginsAndMyProfile@68bbe345</td></tr>
+<tr>
+<td title='cljCheck.SocialShare.a_FacebookLike_TopLeft_HomePage()'><b>a_FacebookLike_TopLeft_HomePage</b><br>Test class: cljCheck.SocialShare</td>
+<td></td>
+<td>15</td>
+<td>cljCheck.SocialShare@5a8806ef</td></tr>
+<tr>
+<td title='cljCheck.TopicPage.a_TopicPageHeading()'><b>a_TopicPageHeading</b><br>Test class: cljCheck.TopicPage</td>
+<td></td>
+<td>11</td>
+<td>cljCheck.TopicPage@9660f4e</td></tr>
+<tr>
+<td title='cljCheck.AllLoginsAndMyProfile.b_FacebookLogin()'><b>b_FacebookLogin</b><br>Test class: cljCheck.AllLoginsAndMyProfile</td>
+<td></td>
+<td>37</td>
+<td>cljCheck.AllLoginsAndMyProfile@68bbe345</td></tr>
+<tr>
+<td title='cljCheck.TopicPage.b_TopicModules()'><b>b_TopicModules</b><br>Test class: cljCheck.TopicPage</td>
+<td></td>
+<td>7</td>
+<td>cljCheck.TopicPage@9660f4e</td></tr>
+<tr>
+<td title='cljCheck.SocialShare.c_SocialShare_UnderSearch_HomePage()'><b>c_SocialShare_UnderSearch_HomePage</b><br>Test class: cljCheck.SocialShare</td>
+<td></td>
+<td>65</td>
+<td>cljCheck.SocialShare@5a8806ef</td></tr>
+<tr>
+<td title='cljCheck.TopicPage.c_TopicIndex()'><b>c_TopicIndex</b><br>Test class: cljCheck.TopicPage</td>
+<td></td>
+<td>12</td>
+<td>cljCheck.TopicPage@9660f4e</td></tr>
+<tr>
+<td title='cljCheck.SocialShare.d_SocialShare_underSearch_Article()'><b>d_SocialShare_underSearch_Article</b><br>Test class: cljCheck.SocialShare</td>
+<td></td>
+<td>73</td>
+<td>cljCheck.SocialShare@5a8806ef</td></tr>
+<tr>
+<td title='cljCheck.TopicPage.d_Test5()'><b>d_Test5</b><br>Test class: cljCheck.TopicPage</td>
+<td></td>
+<td>21</td>
+<td>cljCheck.TopicPage@9660f4e</td></tr>
+<tr>
+<td title='cljCheck.SocialShare.e_SocialShare_Top_Article()'><b>e_SocialShare_Top_Article</b><br>Test class: cljCheck.SocialShare</td>
+<td></td>
+<td>50</td>
+<td>cljCheck.SocialShare@5a8806ef</td></tr>
+<tr>
+<td title='cljCheck.TopicPage.e_Test6()'><b>e_Test6</b><br>Test class: cljCheck.TopicPage</td>
+<td></td>
+<td>21</td>
+<td>cljCheck.TopicPage@9660f4e</td></tr>
+<tr>
+<td title='cljCheck.SocialShare.f_SocialShare_Bottom_Article()'><b>f_SocialShare_Bottom_Article</b><br>Test class: cljCheck.SocialShare</td>
+<td></td>
+<td>50</td>
+<td>cljCheck.SocialShare@5a8806ef</td></tr>
+<tr>
+<td title='cljCheck.TopicPage.f_topic_names()'><b>f_topic_names</b><br>Test class: cljCheck.TopicPage</td>
+<td></td>
+<td>47</td>
+<td>cljCheck.TopicPage@9660f4e</td></tr>
+<tr>
+<td title='cljCheck.TopicPage.g_DontMiss()'><b>g_DontMiss</b><br>Test class: cljCheck.TopicPage</td>
+<td></td>
+<td>43</td>
+<td>cljCheck.TopicPage@9660f4e</td></tr>
+<tr>
+<td title='cljCheck.SocialShare.g_FB_Icon_FlyOut_onArticle()'><b>g_FB_Icon_FlyOut_onArticle</b><br>Test class: cljCheck.SocialShare</td>
+<td></td>
+<td>20</td>
+<td>cljCheck.SocialShare@5a8806ef</td></tr>
+<tr>
+<td title='cljCheck.SocialShare.h_FB_Icon_on_RelatedAtrticle()'><b>h_FB_Icon_on_RelatedAtrticle</b><br>Test class: cljCheck.SocialShare</td>
+<td></td>
+<td>16</td>
+<td>cljCheck.SocialShare@5a8806ef</td></tr>
+<tr>
+<td title='cljCheck.TopicPage.h_WeathreTest()'><b>h_WeathreTest</b><br>Test class: cljCheck.TopicPage</td>
+<td></td>
+<td>8</td>
+<td>cljCheck.TopicPage@9660f4e</td></tr>
+<tr>
+<td title='cljCheck.SocialShare.i_SocialShareOn_Comments()'><b>i_SocialShareOn_Comments</b><br>Test class: cljCheck.SocialShare</td>
+<td></td>
+<td>49</td>
+<td>cljCheck.SocialShare@5a8806ef</td></tr>
+</table><p>
+</body>
+</html>

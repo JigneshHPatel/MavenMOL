@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="cljSuite"  thread-count= "1" verbose="1">
+
+
+
+<test name="cljTestChrome">
+       <parameter name="browser" value="chrome" />
+       <packages>
+          <package name="src/test/java"/>
+      </packages>
+    
+    <classes>
+   
+     <class name="cljCheck.MostShared"/>  
+     <!-- 
+          
+      <class name="cljCheck.AllLoginsAndMyProfile"/>      
+      <class name="cljCheck.MostShared"/>     
+      <class name="cljCheck.SearchPage"/>
+      <class name="cljCheck.PreNextCtr"/>  
+      <class name="cljCheck.RelatedArticle"/> 
+      <class name="cljCheck.TopicPage"/>
+      <class name="cljCheck.SocialShare"/> 
+      <class name="cljCheck.Sports"/>  
+      <class name="cljCheck.AllMenuSubMenuNav"/>
+       
+      -->
+    </classes>
+    
+  </test> 
+   
+
+
+<test name="cljTestFirefox">
+       <parameter name="browser" value="firefox" />
+   	  <packages>
+          <package name="src/test/java"/>
+      </packages>
+       
+    <classes>   
+   
+        <!--  
+      <class name="cljCheck.AllLoginsAndMyProfile"/>      
+      <class name="cljCheck.MostShared"/>     
+      <class name="cljCheck.SearchPage"/>
+      <class name="cljCheck.PreNextCtr"/>  
+      <class name="cljCheck.RelatedArticle"/> 
+      <class name="cljCheck.TopicPage"/>
+      <class name="cljCheck.SocialShare"/>              
+      <class name="cljCheck.Sports"/>  
+      <class name="cljCheck.AllMenuSubMenuNav"/>     
+      
+      -->
+     
+    </classes>
+    </test>
+    
+  
+    
+    </suite>

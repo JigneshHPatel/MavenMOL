@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="20" total="43" passed="23">
+  <reporter-output>
+  </reporter-output>
+  <suite name="cljSuite" duration-ms="789836" started-at="2018-03-16T23:29:41Z" finished-at="2018-03-16T23:42:51Z">
+    <groups>
+    </groups>
+    <test name="cljTestChrome" duration-ms="789773" started-at="2018-03-16T23:29:41Z" finished-at="2018-03-16T23:42:51Z">
+      <class name="cljCheck.AllLoginsAndMyProfile">
+        <test-method status="PASS" signature="setup(java.lang.String, org.testng.ITestContext)[pri:0, instance:cljCheck.AllLoginsAndMyProfile@68bbe345]" name="setup" is-config="true" duration-ms="3959" started-at="2018-03-16T23:29:41Z" finished-at="2018-03-16T23:29:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.AllLoginsAndMyProfile@68bbe345]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:29:45Z" finished-at="2018-03-16T23:29:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void cljCheck.AllLoginsAndMyProfile.a_DirectLogin() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="a_DirectLogin()[pri:0, instance:cljCheck.AllLoginsAndMyProfile@68bbe345]" name="a_DirectLogin" duration-ms="56152" started-at="2018-03-16T23:29:45Z" finished-at="2018-03-16T23:30:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a_DirectLogin -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.AllLoginsAndMyProfile@68bbe345]" name="tearDown" is-config="true" duration-ms="470" started-at="2018-03-16T23:30:41Z" finished-at="2018-03-16T23:30:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=a_DirectLogin status=SUCCESS method=AllLoginsAndMyProfile.a_DirectLogin()[pri:0, instance:cljCheck.AllLoginsAndMyProfile@68bbe345] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="b_FacebookLogin()[pri:0, instance:cljCheck.AllLoginsAndMyProfile@68bbe345]" name="b_FacebookLogin" duration-ms="37711" started-at="2018-03-16T23:30:41Z" finished-at="2018-03-16T23:31:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b_FacebookLogin -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.AllLoginsAndMyProfile@68bbe345]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:30:41Z" finished-at="2018-03-16T23:30:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.AllLoginsAndMyProfile.b_FacebookLogin() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.AllLoginsAndMyProfile@68bbe345]" name="tearDown" is-config="true" duration-ms="83" started-at="2018-03-16T23:31:19Z" finished-at="2018-03-16T23:31:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=b_FacebookLogin status=SUCCESS method=AllLoginsAndMyProfile.b_FacebookLogin()[pri:0, instance:cljCheck.AllLoginsAndMyProfile@68bbe345] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="after()[pri:0, instance:cljCheck.AllLoginsAndMyProfile@68bbe345]" name="after" is-config="true" duration-ms="1741" started-at="2018-03-16T23:42:49Z" finished-at="2018-03-16T23:42:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+      </class> <!-- cljCheck.AllLoginsAndMyProfile -->
+      <class name="cljCheck.TopicPage">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:34:12Z" finished-at="2018-03-16T23:34:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.TopicPage.a_TopicPageHeading() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="a_TopicPageHeading()[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="a_TopicPageHeading" duration-ms="11444" started-at="2018-03-16T23:34:12Z" finished-at="2018-03-16T23:34:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a_TopicPageHeading -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="tearDown" is-config="true" duration-ms="59" started-at="2018-03-16T23:34:23Z" finished-at="2018-03-16T23:34:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=a_TopicPageHeading status=SUCCESS method=TopicPage.a_TopicPageHeading()[pri:0, instance:cljCheck.TopicPage@9660f4e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:34:24Z" finished-at="2018-03-16T23:34:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.TopicPage.b_TopicModules() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="b_TopicModules()[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="b_TopicModules" duration-ms="7768" started-at="2018-03-16T23:34:24Z" finished-at="2018-03-16T23:34:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- b_TopicModules -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="tearDown" is-config="true" duration-ms="48" started-at="2018-03-16T23:34:31Z" finished-at="2018-03-16T23:34:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=b_TopicModules status=SUCCESS method=TopicPage.b_TopicModules()[pri:0, instance:cljCheck.TopicPage@9660f4e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="c_TopicIndex()[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="c_TopicIndex" duration-ms="12600" started-at="2018-03-16T23:34:31Z" finished-at="2018-03-16T23:34:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c_TopicIndex -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:34:31Z" finished-at="2018-03-16T23:34:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.TopicPage.c_TopicIndex() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="tearDown" is-config="true" duration-ms="88" started-at="2018-03-16T23:34:44Z" finished-at="2018-03-16T23:34:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=c_TopicIndex status=SUCCESS method=TopicPage.c_TopicIndex()[pri:0, instance:cljCheck.TopicPage@9660f4e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-03-16T23:34:44Z" finished-at="2018-03-16T23:34:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.TopicPage.d_Test5() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="d_Test5()[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="d_Test5" duration-ms="21367" started-at="2018-03-16T23:34:44Z" finished-at="2018-03-16T23:35:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- d_Test5 -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="tearDown" is-config="true" duration-ms="118" started-at="2018-03-16T23:35:05Z" finished-at="2018-03-16T23:35:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=d_Test5 status=SUCCESS method=TopicPage.d_Test5()[pri:0, instance:cljCheck.TopicPage@9660f4e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:35:06Z" finished-at="2018-03-16T23:35:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.TopicPage.e_Test6() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="e_Test6()[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="e_Test6" duration-ms="21699" started-at="2018-03-16T23:35:06Z" finished-at="2018-03-16T23:35:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- e_Test6 -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="tearDown" is-config="true" duration-ms="55" started-at="2018-03-16T23:35:27Z" finished-at="2018-03-16T23:35:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=e_Test6 status=SUCCESS method=TopicPage.e_Test6()[pri:0, instance:cljCheck.TopicPage@9660f4e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-03-16T23:35:27Z" finished-at="2018-03-16T23:35:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.TopicPage.f_topic_names() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f_topic_names()[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="f_topic_names" duration-ms="47167" started-at="2018-03-16T23:35:27Z" finished-at="2018-03-16T23:36:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_topic_names -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="tearDown" is-config="true" duration-ms="60" started-at="2018-03-16T23:36:14Z" finished-at="2018-03-16T23:36:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=f_topic_names status=SUCCESS method=TopicPage.f_topic_names()[pri:0, instance:cljCheck.TopicPage@9660f4e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:36:15Z" finished-at="2018-03-16T23:36:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.TopicPage.g_DontMiss() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="g_DontMiss()[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="g_DontMiss" duration-ms="43527" started-at="2018-03-16T23:36:15Z" finished-at="2018-03-16T23:36:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- g_DontMiss -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="tearDown" is-config="true" duration-ms="50" started-at="2018-03-16T23:36:58Z" finished-at="2018-03-16T23:36:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=g_DontMiss status=SUCCESS method=TopicPage.g_DontMiss()[pri:0, instance:cljCheck.TopicPage@9660f4e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:36:58Z" finished-at="2018-03-16T23:36:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.TopicPage.h_WeathreTest() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="h_WeathreTest()[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="h_WeathreTest" duration-ms="8620" started-at="2018-03-16T23:36:58Z" finished-at="2018-03-16T23:37:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- h_WeathreTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.TopicPage@9660f4e]" name="tearDown" is-config="true" duration-ms="65" started-at="2018-03-16T23:37:07Z" finished-at="2018-03-16T23:37:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=h_WeathreTest status=SUCCESS method=TopicPage.h_WeathreTest()[pri:0, instance:cljCheck.TopicPage@9660f4e] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- cljCheck.TopicPage -->
+      <class name="cljCheck.RelatedArticle">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.RelatedArticle@7c29daf3]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-03-16T23:33:33Z" finished-at="2018-03-16T23:33:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void cljCheck.RelatedArticle.RelatedArticles() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="RelatedArticles()[pri:0, instance:cljCheck.RelatedArticle@7c29daf3]" name="RelatedArticles" duration-ms="39191" started-at="2018-03-16T23:33:33Z" finished-at="2018-03-16T23:34:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RelatedArticles -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.RelatedArticle@7c29daf3]" name="tearDown" is-config="true" duration-ms="52" started-at="2018-03-16T23:34:12Z" finished-at="2018-03-16T23:34:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=RelatedArticles status=SUCCESS method=RelatedArticle.RelatedArticles()[pri:0, instance:cljCheck.RelatedArticle@7c29daf3] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- cljCheck.RelatedArticle -->
+      <class name="cljCheck.SocialShare">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:37:07Z" finished-at="2018-03-16T23:37:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.SocialShare.a_FacebookLike_TopLeft_HomePage() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="a_FacebookLike_TopLeft_HomePage()[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="a_FacebookLike_TopLeft_HomePage" duration-ms="15541" started-at="2018-03-16T23:37:07Z" finished-at="2018-03-16T23:37:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- a_FacebookLike_TopLeft_HomePage -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="tearDown" is-config="true" duration-ms="55" started-at="2018-03-16T23:37:22Z" finished-at="2018-03-16T23:37:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=a_FacebookLike_TopLeft_HomePage status=SUCCESS method=SocialShare.a_FacebookLike_TopLeft_HomePage()[pri:0, instance:cljCheck.SocialShare@5a8806ef] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="c_SocialShare_UnderSearch_HomePage()[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="c_SocialShare_UnderSearch_HomePage" duration-ms="65351" started-at="2018-03-16T23:37:22Z" finished-at="2018-03-16T23:38:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- c_SocialShare_UnderSearch_HomePage -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:37:22Z" finished-at="2018-03-16T23:37:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void cljCheck.SocialShare.c_SocialShare_UnderSearch_HomePage() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="tearDown" is-config="true" duration-ms="64" started-at="2018-03-16T23:38:28Z" finished-at="2018-03-16T23:38:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=c_SocialShare_UnderSearch_HomePage status=SUCCESS method=SocialShare.c_SocialShare_UnderSearch_HomePage()[pri:0, instance:cljCheck.SocialShare@5a8806ef] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:38:28Z" finished-at="2018-03-16T23:38:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.SocialShare.d_SocialShare_underSearch_Article() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="d_SocialShare_underSearch_Article()[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="d_SocialShare_underSearch_Article" duration-ms="73128" started-at="2018-03-16T23:38:28Z" finished-at="2018-03-16T23:39:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- d_SocialShare_underSearch_Article -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="tearDown" is-config="true" duration-ms="43" started-at="2018-03-16T23:39:41Z" finished-at="2018-03-16T23:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=d_SocialShare_underSearch_Article status=SUCCESS method=SocialShare.d_SocialShare_underSearch_Article()[pri:0, instance:cljCheck.SocialShare@5a8806ef] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-03-16T23:39:41Z" finished-at="2018-03-16T23:39:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.SocialShare.e_SocialShare_Top_Article() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="e_SocialShare_Top_Article()[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="e_SocialShare_Top_Article" duration-ms="50299" started-at="2018-03-16T23:39:41Z" finished-at="2018-03-16T23:40:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- e_SocialShare_Top_Article -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="tearDown" is-config="true" duration-ms="68" started-at="2018-03-16T23:40:31Z" finished-at="2018-03-16T23:40:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=e_SocialShare_Top_Article status=SUCCESS method=SocialShare.e_SocialShare_Top_Article()[pri:0, instance:cljCheck.SocialShare@5a8806ef] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="f_SocialShare_Bottom_Article()[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="f_SocialShare_Bottom_Article" duration-ms="50954" started-at="2018-03-16T23:40:31Z" finished-at="2018-03-16T23:41:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f_SocialShare_Bottom_Article -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:40:31Z" finished-at="2018-03-16T23:40:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.SocialShare.f_SocialShare_Bottom_Article() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="tearDown" is-config="true" duration-ms="42" started-at="2018-03-16T23:41:22Z" finished-at="2018-03-16T23:41:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=f_SocialShare_Bottom_Article status=SUCCESS method=SocialShare.f_SocialShare_Bottom_Article()[pri:0, instance:cljCheck.SocialShare@5a8806ef] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:41:22Z" finished-at="2018-03-16T23:41:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.SocialShare.g_FB_Icon_FlyOut_onArticle() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="g_FB_Icon_FlyOut_onArticle()[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="g_FB_Icon_FlyOut_onArticle" duration-ms="20227" started-at="2018-03-16T23:41:22Z" finished-at="2018-03-16T23:41:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- g_FB_Icon_FlyOut_onArticle -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="tearDown" is-config="true" duration-ms="61" started-at="2018-03-16T23:41:43Z" finished-at="2018-03-16T23:41:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=g_FB_Icon_FlyOut_onArticle status=SUCCESS method=SocialShare.g_FB_Icon_FlyOut_onArticle()[pri:0, instance:cljCheck.SocialShare@5a8806ef] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="h_FB_Icon_on_RelatedAtrticle()[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="h_FB_Icon_on_RelatedAtrticle" duration-ms="16359" started-at="2018-03-16T23:41:43Z" finished-at="2018-03-16T23:41:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- h_FB_Icon_on_RelatedAtrticle -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:41:43Z" finished-at="2018-03-16T23:41:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.SocialShare.h_FB_Icon_on_RelatedAtrticle() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="tearDown" is-config="true" duration-ms="48" started-at="2018-03-16T23:41:59Z" finished-at="2018-03-16T23:41:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=h_FB_Icon_on_RelatedAtrticle status=SUCCESS method=SocialShare.h_FB_Icon_on_RelatedAtrticle()[pri:0, instance:cljCheck.SocialShare@5a8806ef] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-03-16T23:41:59Z" finished-at="2018-03-16T23:41:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.SocialShare.i_SocialShareOn_Comments() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="i_SocialShareOn_Comments()[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="i_SocialShareOn_Comments" duration-ms="49701" started-at="2018-03-16T23:41:59Z" finished-at="2018-03-16T23:42:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- i_SocialShareOn_Comments -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.SocialShare@5a8806ef]" name="tearDown" is-config="true" duration-ms="48" started-at="2018-03-16T23:42:49Z" finished-at="2018-03-16T23:42:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=i_SocialShareOn_Comments status=SUCCESS method=SocialShare.i_SocialShareOn_Comments()[pri:0, instance:cljCheck.SocialShare@5a8806ef] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- cljCheck.SocialShare -->
+      <class name="cljCheck.SearchPage">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.SearchPage@7494e528]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-03-16T23:32:40Z" finished-at="2018-03-16T23:32:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.SearchPage.Search() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="Search()[pri:0, instance:cljCheck.SearchPage@7494e528]" name="Search" duration-ms="31164" started-at="2018-03-16T23:32:40Z" finished-at="2018-03-16T23:33:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Search -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.SearchPage@7494e528]" name="tearDown" is-config="true" duration-ms="119" started-at="2018-03-16T23:33:11Z" finished-at="2018-03-16T23:33:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Search status=SUCCESS method=SearchPage.Search()[pri:0, instance:cljCheck.SearchPage@7494e528] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- cljCheck.SearchPage -->
+      <class name="cljCheck.MostShared">
+        <test-method status="PASS" signature="MostShared_UK_HomePage()[pri:0, instance:cljCheck.MostShared@30b8a058]" name="MostShared_UK_HomePage" duration-ms="41003" started-at="2018-03-16T23:31:19Z" finished-at="2018-03-16T23:32:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MostShared_UK_HomePage -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.MostShared@30b8a058]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:31:19Z" finished-at="2018-03-16T23:31:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.MostShared.MostShared_UK_HomePage() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.MostShared@30b8a058]" name="tearDown" is-config="true" duration-ms="64" started-at="2018-03-16T23:32:00Z" finished-at="2018-03-16T23:32:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MostShared_UK_HomePage status=SUCCESS method=MostShared.MostShared_UK_HomePage()[pri:0, instance:cljCheck.MostShared@30b8a058] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.MostShared@30b8a058]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2018-03-16T23:32:00Z" finished-at="2018-03-16T23:32:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.MostShared.MostShared_US_HomePage() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="MostShared_US_HomePage()[pri:0, instance:cljCheck.MostShared@30b8a058]" name="MostShared_US_HomePage" duration-ms="39820" started-at="2018-03-16T23:32:00Z" finished-at="2018-03-16T23:32:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MostShared_US_HomePage -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.MostShared@30b8a058]" name="tearDown" is-config="true" duration-ms="51" started-at="2018-03-16T23:32:40Z" finished-at="2018-03-16T23:32:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MostShared_US_HomePage status=SUCCESS method=MostShared.MostShared_US_HomePage()[pri:0, instance:cljCheck.MostShared@30b8a058] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- cljCheck.MostShared -->
+      <class name="cljCheck.PreNextCtr">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:cljCheck.PreNextCtr@4bbfb90a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2018-03-16T23:33:11Z" finished-at="2018-03-16T23:33:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void cljCheck.PreNextCtr.PreNextControls() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="PreNextControls()[pri:0, instance:cljCheck.PreNextCtr@4bbfb90a]" name="PreNextControls" duration-ms="21341" started-at="2018-03-16T23:33:11Z" finished-at="2018-03-16T23:33:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreNextControls -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult, org.testng.ITestContext)[pri:0, instance:cljCheck.PreNextCtr@4bbfb90a]" name="tearDown" is-config="true" duration-ms="65" started-at="2018-03-16T23:33:33Z" finished-at="2018-03-16T23:33:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PreNextControls status=SUCCESS method=PreNextCtr.PreNextControls()[pri:0, instance:cljCheck.PreNextCtr@4bbfb90a] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@57abad67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- cljCheck.PreNextCtr -->
+    </test> <!-- cljTestChrome -->
+    <test name="cljTestFirefox" duration-ms="0" started-at="2018-03-16T23:42:51Z" finished-at="2018-03-16T23:42:51Z">
+      <class name="cljCheck.AllLoginsAndMyProfile">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:cljCheck.AllLoginsAndMyProfile@68bbe345]" name="beforeSuite" is-config="true" duration-ms="120" started-at="2018-03-16T23:29:41Z" finished-at="2018-03-16T23:29:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+      </class> <!-- cljCheck.AllLoginsAndMyProfile -->
+    </test> <!-- cljTestFirefox -->
+  </suite> <!-- cljSuite -->
+</testng-results>
