@@ -4,15 +4,20 @@
 
 
 
-<test name="cljTestChrome">
-       <parameter name="browser" value="chrome" />
-       <packages>
-          <package name="src/test/java"/>
-      </packages>
+<test name="cljTestChrome65">
+
+		<parameter name="os" value="Windows" />
+		<parameter name="os_version" value="10" />
+		<parameter name="browser" value="Chrome" />
+		<parameter name="browser_version" value="65.0" />
+
+		<packages>
+			<package name="src/test/java" />
+		</packages>
     
     <classes>
    
-     <class name="cljCheck.MostShared"/>  
+     <class name="cljCheck.AllLoginsAndMyProfile"/>
      <!-- 
           
       <class name="cljCheck.AllLoginsAndMyProfile"/>      
