@@ -28,20 +28,26 @@ import com.relevantcodes.extentreports.LogStatus;
 import config.Screenshot;
 
 public class BrowserStack {
+	public static Credentials credentials;
 	public static WebDriver driver;
 	public static ExtentReports report;
 	public static ExtentTest logger;
 	public static ExtentHtmlReporter htmlReporter;
 	public static final String line = "⇦⇦⇦⇦⇦⇦⇦⇦⇦⇦࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇⇨⇨⇨⇨⇨⇨⇨⇨⇨⇨";
 	public static JavascriptExecutor je = (JavascriptExecutor) driver;
-	public static final String username = "jigneshpatel34";
-	public static final String key = "dxqmFdZ94Q1GiXYSpQXy";
-	public static final String url = "https://" + username + ":" + key + "@hub-cloud.browserstack.com/wd/hub";
-	public static Capabilities caps;// = ((RemoteWebDriver) driver).getCapabilities();
+	public static String username;
+	public static String key;
+	public static String url;
+	public static Capabilities caps;
 	public static String platformInfo;
 
 	@BeforeSuite
 	public void beforeSuite() {
+		
+		credentials = new Credentials();
+		username = credentials.getBrowserStackUsername();
+		key = credentials.getBrowserStackKey();
+		url = "https://" + username + ":" + key + "@hub-cloud.browserstack.com/wd/hub";
 
 		report = new ExtentReports(System.getProperty("user.dir") + "/testReport/" + Url.currentDate + "/"
 				+ Url.currentDate + "-Report.html");
@@ -59,7 +65,6 @@ public class BrowserStack {
 		logger = report.startTest("<font color='magenta';>" + suitTest + "</font>");
 		logger.log(LogStatus.INFO, "<font color='cyan';>" + suitTest + "</font>");
 
-		// Url.URL(driver);
 		System.out.println("<~˜~˜~~˜~˜~~˜~˜~~˜~˜~>");
 	}
 
@@ -81,7 +86,6 @@ public class BrowserStack {
 
 	@Parameters(value = { "os", "os_version", "browser", "browser_version" })
 	@BeforeMethod(alwaysRun = true)
-	// public void beforeMethod(Method method, ITestContext ctx ) throws Exception{
 	public void beforeMethod(String os, String os_version, String browser, String browser_version, Method method,
 			ITestContext ctx) throws Exception {
 
@@ -118,7 +122,6 @@ public class BrowserStack {
 
 		logger.log(LogStatus.INFO, "****" + method.getName().toUpperCase() + "****");
 		logger.log(LogStatus.INFO, method.getAnnotation(Test.class).description());
-		// Capabilities caps = ((RemoteWebDriver) driver).getCapabilities();
 		caps = ((RemoteWebDriver) driver).getCapabilities();
 		System.out.println(caps.getBrowserName() + caps.getVersion() + "--" + caps.getPlatform());
 		info(driver, caps.getBrowserName() + caps.getVersion() + "--" + caps.getPlatform());
@@ -164,9 +167,7 @@ public class BrowserStack {
 
 	@AfterTest(alwaysRun = true)
 	public void after() {
-		/*
-		 * if(driver!= null) { driver.quit(); }
-		 */
+
 		System.gc();
 	}
 
