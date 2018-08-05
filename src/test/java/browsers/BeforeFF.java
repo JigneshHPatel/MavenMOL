@@ -28,11 +28,11 @@ public class BeforeFF {
 
 		System.setProperty(FirefoxDriver.SystemProperty.DRIVER_USE_MARIONETTE, "true");
 		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "/dev/null");
-		if (Url.os.contains("win")) {
+		if (util.SystemOSName.isWindows()) {
 			System.setProperty("webdriver.gecko.driver",
 					"c:\\jigneshkumar.patel\\Desktop\\Automation\\Jar\\geckodriver.exe");
 			driver = new FirefoxDriver();
-		} else if (Url.os.contains("mac")) {
+		} else if (util.SystemOSName.isMac()) {
 			driver = new FirefoxDriver();
 		}
 		driver.manage().deleteAllCookies();
@@ -40,8 +40,8 @@ public class BeforeFF {
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 
-		// driver.get("http://www.dailymail.co.uk/home/index.html");
-		Url.URL(driver);
+		driver.get(util.Urls.baseurl + "/home/index.html");
+
 		try {
 			assertEquals("Home", driver.findElement(By.cssSelector(".h1-page-last-updated>h1")).getText());
 		} catch (Exception e) {

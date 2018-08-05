@@ -17,6 +17,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -25,32 +26,30 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-import config.Screenshot;
+import util.DataFileReader;
+import util.Screenshot;
+import util.SystemDateTime;
 
 public class BrowserStack {
-	public static Credentials credentials;
+	private static DataFileReader dataReader = new DataFileReader();
+
 	public static WebDriver driver;
 	public static ExtentReports report;
 	public static ExtentTest logger;
 	public static ExtentHtmlReporter htmlReporter;
 	public static final String line = "⇦⇦⇦⇦⇦⇦⇦⇦⇦⇦࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇࿇⇨⇨⇨⇨⇨⇨⇨⇨⇨⇨";
 	public static JavascriptExecutor je = (JavascriptExecutor) driver;
-	public static String username;
-	public static String key;
-	public static String url;
+	public static final String username = dataReader.getBrowserstackUsername();
+	public static final String key = dataReader.getBrowserstackKey();
+	public static final String url = "https://" + username + ":" + key + "@hub-cloud.browserstack.com/wd/hub";
 	public static Capabilities caps;
 	public static String platformInfo;
 
 	@BeforeSuite
 	public void beforeSuite() {
-		
-		credentials = new Credentials();
-		username = credentials.getBrowserStackUsername();
-		key = credentials.getBrowserStackKey();
-		url = "https://" + username + ":" + key + "@hub-cloud.browserstack.com/wd/hub";
 
-		report = new ExtentReports(System.getProperty("user.dir") + "/testReport/" + Url.currentDate + "/"
-				+ Url.currentDate + "-Report.html");
+		report = new ExtentReports(System.getProperty("user.dir") + "/testReport/" + SystemDateTime.currentDateTime()
+				+ "/" + SystemDateTime.currentDateTime() + "-Report.html");
 		report.loadConfig(new File(System.getProperty("user.dir") + "/extent-config.xml"));
 
 	}
@@ -86,6 +85,7 @@ public class BrowserStack {
 
 	@Parameters(value = { "os", "os_version", "browser", "browser_version" })
 	@BeforeMethod(alwaysRun = true)
+	// public void beforeMethod(Method method, ITestContext ctx ) throws Exception{
 	public void beforeMethod(String os, String os_version, String browser, String browser_version, Method method,
 			ITestContext ctx) throws Exception {
 
@@ -122,9 +122,19 @@ public class BrowserStack {
 
 		logger.log(LogStatus.INFO, "****" + method.getName().toUpperCase() + "****");
 		logger.log(LogStatus.INFO, method.getAnnotation(Test.class).description());
+		// Capabilities caps = ((RemoteWebDriver) driver).getCapabilities();
 		caps = ((RemoteWebDriver) driver).getCapabilities();
 		System.out.println(caps.getBrowserName() + caps.getVersion() + "--" + caps.getPlatform());
 		info(driver, caps.getBrowserName() + caps.getVersion() + "--" + caps.getPlatform());
+
+		driver.get(dataReader.getBaseUrl() + "/home/index.html");
+		commonLibrary.CmpConsent.gdprConsent(driver);
+		info(driver, driver.getCurrentUrl());
+		Assert.assertTrue(driver.getTitle().contains("UK Home"), "HomePage is present");
+
+		System.out.println("-------------------------------------------------");
+		System.out.println("  *** " + method.getName() + " ***");
+		System.out.println("-------------------------------------------------");
 
 	}
 
@@ -143,14 +153,14 @@ public class BrowserStack {
 			}
 			// error log file
 			String fileName = context.getCurrentXmlTest().getName() + method.getName();
-			File logFile = new File(
-					System.getProperty("user.dir") + "/testReport/" + Url.currentDate + "/" + fileName + ".log");
+			File logFile = new File(System.getProperty("user.dir") + "/testReport/" + SystemDateTime.currentDateTime()
+					+ "/" + fileName + ".log");
 			try {
 				PrintStream ps = new PrintStream(logFile);
 				result.getThrowable().printStackTrace(ps);
 				ps.close();
-				logger.log(LogStatus.INFO, "<a href='" + "./testReport/" + Url.currentDate + "/" + fileName + ".log"
-						+ "'target='_blank'>Open this log file for detailed error log</a>");
+				logger.log(LogStatus.INFO, "<a href='" + "./testReport/" + SystemDateTime.currentDateTime() + "/"
+						+ fileName + ".log" + "'target='_blank'>Open this log file for detailed error log</a>");
 			} catch (Exception e) {
 				System.out.println(e.getMessage());
 			}
@@ -160,6 +170,8 @@ public class BrowserStack {
 		report.endTest(logger);
 		report.flush();
 
+		System.out.println(line);
+
 		if (driver != null) {
 			driver.quit();
 		}
@@ -167,7 +179,6 @@ public class BrowserStack {
 
 	@AfterTest(alwaysRun = true)
 	public void after() {
-
 		System.gc();
 	}
 

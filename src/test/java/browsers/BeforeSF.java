@@ -31,7 +31,7 @@ public class BeforeSF {
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		Url.URL(driver);
+		driver.get(util.Urls.baseurl + "/home/index.html");
 		try {
 			assertEquals("Home", driver.findElement(By.cssSelector(".h1-page-last-updated>h1")).getText());
 		} catch (Exception e) {
